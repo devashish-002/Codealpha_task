@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Image Gallery</h1>
+    <p>Filter images by category and open them in a lightbox.</p>
+  </header>
+
+  <main>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="city">City</button>
+      <button class="filter-btn" data-filter="travel">Travel</button>
+    </div>
+
+    <section class="gallery" id="gallery">
+      <div class="card" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Nature landscape" />
+        <span>Nature</span>
+      </div>
+      <div class="card" data-category="city">
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80" alt="City at night" />
+        <span>City</span>
+      </div>
+      <div class="card" data-category="travel">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Beach travel" />
+        <span>Travel</span>
+      </div>
+      <div class="card" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Forest path" />
+        <span>Nature</span>
+      </div>
+      <div class="card" data-category="city">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80" alt="Modern building" />
+        <span>City</span>
+      </div>
+      <div class="card" data-category="travel">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Mountain travel" />
+        <span>Travel</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button class="close" id="closeBtn">&times;</button>
+    <button class="nav prev" id="prevBtn">&#10094;</button>
+    <img id="lightboxImg" src="" alt="Selected gallery image" />
+    <button class="nav next" id="nextBtn">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
